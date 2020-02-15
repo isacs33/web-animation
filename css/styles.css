@@ -24,8 +24,19 @@
 .square.one {
   background-color: #030396;
   top: 167px;
+  animation: move 5s infinite;
 }
 .square.two {
   background-color: #ffff00;
   top: 277px;
+  animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 720px;
+  }
 }
