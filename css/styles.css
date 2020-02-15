@@ -1,0 +1,42 @@
+:root {
+  --square-height: 20px;
+  --square-width: calc(var(--square-height) * 4);
+  --bar-width: calc(var(--square-width) / 3);
+}
+.background {
+  width: 800px;
+  height: 500px;
+  background-color: #c0c0c0;
+  position: relative;
+}
+.bar {
+  width: var(--bar-width);
+  height: 100%;
+  background: #000;
+  margin-right: var(--bar-width);
+  float: left;
+}
+.square {
+  width: var(--square-width);
+  height: var(--square-height);
+  position: absolute;
+}
+.square.one {
+  background-color: #030396;
+  top: 167px;
+  animation: move 5s infinite;
+}
+.square.two {
+  background-color: #ffff00;
+  top: 277px;
+  animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 720px;
+  }
+}
