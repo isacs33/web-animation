@@ -2,10 +2,12 @@
   --square-height: 20px;
   --square-width: calc(var(--square-height) * 4);
   --bar-width: calc(var(--square-width) / 3);
+  --background-width: 800px;
+  --background-height: 500px;
 }
 .background {
-  width: 800px;
-  height: 500px;
+  width: var(--background-width);
+  height: var(--background-height);
   background-color: #c0c0c0;
   position: relative;
 }
